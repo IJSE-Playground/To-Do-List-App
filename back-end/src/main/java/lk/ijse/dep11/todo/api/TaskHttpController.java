@@ -25,8 +25,8 @@ public class TaskHttpController {
     public TaskHttpController() {
         HikariConfig config = new HikariConfig();
         config.setUsername("postgres");
-        config.setPassword("199757");
-        config.setJdbcUrl("jdbc:postgresql://localhost:5432/database1");
+        config.setPassword("password"); // password
+        config.setJdbcUrl("database-url"); // url to the database
         config.setDriverClassName("org.postgresql.Driver");
         config.addDataSourceProperty("maximumPoolSize", 10);
         pool = new HikariDataSource(config);
